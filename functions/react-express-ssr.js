@@ -6,8 +6,8 @@ import React from "react"
 import { renderToString } from "react-dom/server"
 import App from "./react-app/App"
 import Data from "./react-app/usersData"
-import fs from "fs"
-import path from "path"
+// import fs from "fs"
+// import path from "path"
 
 const functionName = 'react-express-ssr'
 const app = express()
