@@ -28,7 +28,7 @@ const Html = ({ body, styles, title }) => {
       </head>
       <body style="margin:0">
         <div id="root">${body}</div>
-        <script src="/dev/bundle.js"></script>
+<!--        <script src="/dev/bundle.js"></script>-->
       </body>
     </html>
   `

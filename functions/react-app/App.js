@@ -30,7 +30,7 @@ const App = (props) => {
             onClick={() => {
                 console.log('hi button')
             }}
-            style={{width:'50px', height:'30px'}}
+            style={{width:'150px', height:'30px'}}
         >
             Send e-mail test!
         </button>
