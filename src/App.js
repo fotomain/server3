@@ -61,7 +61,7 @@ class App extends Component {
 
             <a className='link'
                onClick={() => {
-                   console.log('hi button 1')
+                   console.log('=== 111')
 
                    transporter.verify((err, success) => {
                        if (err)
@@ -75,6 +75,7 @@ class App extends Component {
                        }
                    });
 
+                   console.log('=== 222')
 
                    let mailOptions = {
                        from: "test111@gmail.com",
@@ -92,6 +93,7 @@ class App extends Component {
                            // res.json({ status: "Email sent" });
                        }
                    });
+                   console.log('=== 333')
 
                }}
             >
