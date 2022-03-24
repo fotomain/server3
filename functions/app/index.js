@@ -56,7 +56,7 @@ export default function expressApp(functionName) {
         <br/>
 
         <div>
-          <a href='https://github.com/DavidWells/netlify-functions-express' target='_blank'>
+          <a href='https://github.com/fotomain/server3' target='_blank'>
             See the source code on github
           </a>
         </div>

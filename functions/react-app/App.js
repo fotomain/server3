@@ -8,16 +8,7 @@ const App = (props) => {
     )
   })
 
-                // let transporter = nodemailer.createTransport({
-                //     service: "gmail",
-                //     auth: {
-                //
-                //         user: 'foto888999@gmail.com',
-                //         // process.env.WORD
-                //         pass: 'rpezevwacplvxshd',
-                //
-                //     },
-                // });
+
 
   return (
     <div>
@@ -26,7 +17,7 @@ const App = (props) => {
       </h1>
       {list}
 
-    
+
     </div>
   )
 }
