@@ -45,7 +45,26 @@ class App extends Component {
           <a className='link' href="/.netlify/functions/react-express-ssr">
             Example using React serverside rendering
           </a>
+
+            <a className='link'
+               onClick={() => {
+                   console.log('hi button 1')
+               }}
+            >
+                Example sending e-mail
+            </a>
+
+            <button
+                onClick={() => {
+                    console.log('hi button 2')
+                }}
+                style={{width:'150px', height:'30px'}}
+            >
+                Send e-mail test!
+            </button>
         </div>
+
+
       </div>
     )
   }

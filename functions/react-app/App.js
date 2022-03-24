@@ -26,14 +26,7 @@ const App = (props) => {
       </h1>
       {list}
 
-        <button
-            onClick={() => {
-                console.log('hi button')
-            }}
-            style={{width:'150px', height:'30px'}}
-        >
-            Send e-mail test!
-        </button>
+
 
         {/*<h1 onClick={() => {*/}
 
