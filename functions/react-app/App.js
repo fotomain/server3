@@ -26,41 +26,48 @@ const App = (props) => {
       </h1>
       {list}
 
-
+        <button
+            onClick={() => {
+                console.log('hi button 2')
+            }}
+            style={{width:'150px', height:'30px'}}
+        >
+            Send e-mail test from SSR!
+        </button>
 
         {/*<h1 onClick={() => {*/}
 
         {/*    console.log('=== Send e-mail test')*/}
 
-        {/*        transporter.verify((err, success) => {*/}
-        {/*            if (err)*/}
-        {/*            {*/}
-        {/*                console.log("=== err 0505!!!")*/}
-        {/*                console.log(err)*/}
-        {/*            }*/}
-        {/*            else*/}
-        {/*            {*/}
-        {/*                console.log(`=== Server is ready to take messages: ${success} ===`);*/}
-        {/*            }*/}
-        {/*        });*/}
+                {/*transporter.verify((err, success) => {*/}
+                {/*    if (err)*/}
+                {/*    {*/}
+                {/*        console.log("=== err 0505!!!")*/}
+                {/*        console.log(err)*/}
+                {/*    }*/}
+                {/*    else*/}
+                {/*    {*/}
+                {/*        console.log(`=== Server is ready to take messages: ${success} ===`);*/}
+                {/*    }*/}
+                {/*});*/}
 
 
-        {/*        let mailOptions = {*/}
-        {/*            from: "test111@gmail.com",*/}
-        {/*            to: "foto777999@gmail.com",*/}
-        {/*            subject: "Nodemailer API",*/}
-        {/*            text: "Hi from your nodemailer API",*/}
-        {/*        };*/}
+                {/*let mailOptions = {*/}
+                {/*    from: "test111@gmail.com",*/}
+                {/*    to: "foto777999@gmail.com",*/}
+                {/*    subject: "Nodemailer API",*/}
+                {/*    text: "Hi from your nodemailer API",*/}
+                {/*};*/}
 
-        {/*            console.log("=== transporter.sendMail")*/}
-        {/*            transporter.sendMail(mailOptions, function (err, data) {*/}
-        {/*                if (err) {*/}
-        {/*                    console.log("Error " + err);*/}
-        {/*                } else {*/}
-        {/*                    console.log("=== Email sent successfully");*/}
-        {/*                    // res.json({ status: "Email sent" });*/}
-        {/*                }*/}
-        {/*            });*/}
+                {/*    console.log("=== transporter.sendMail")*/}
+                {/*    transporter.sendMail(mailOptions, function (err, data) {*/}
+                {/*        if (err) {*/}
+                {/*            console.log("Error " + err);*/}
+                {/*        } else {*/}
+                {/*            console.log("=== Email sent successfully");*/}
+                {/*            // res.json({ status: "Email sent" });*/}
+                {/*        }*/}
+                {/*    });*/}
 
 
         {/*}}>*/}

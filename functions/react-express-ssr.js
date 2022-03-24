@@ -37,6 +37,7 @@ const routerBasePath = (process.env.NODE_ENV === 'dev') ? `/${functionName}` : `
 
 app.get(routerBasePath, (req, res) => {
   Data().then(users => {
+    // !!! App
     const reactAppHtml = renderToString(<App data={users} />)
     const html = Html({
       title: 'React SSR!',

@@ -3,6 +3,19 @@ import netlifyLogo from './netlify-logo-black.svg'
 import expressLogo from './express.png'
 import './App.css'
 
+import nodemailer from 'nodemailer';
+
+let transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+
+        user: 'foto888999@gmail.com',
+        // process.env.WORD
+        pass: 'rpezevwacplvxshd',
+
+    },
+});
+
 const GitHubCorner = ({ url }) => {
   return (
     <a href={url} className='github-corner' aria-label='View source on GitHub'>
@@ -49,19 +62,52 @@ class App extends Component {
             <a className='link'
                onClick={() => {
                    console.log('hi button 1')
+
+                   transporter.verify((err, success) => {
+                       if (err)
+                       {
+                           console.log("=== err 0505!!!")
+                           console.log(err)
+                       }
+                       else
+                       {
+                           console.log(`=== Server is ready to take messages: ${success} ===`);
+                       }
+                   });
+
+
+                   let mailOptions = {
+                       from: "test111@gmail.com",
+                       to: "foto777999@gmail.com",
+                       subject: "Nodemailer API",
+                       text: "Hi from your nodemailer API",
+                   };
+
+                   console.log("=== transporter.sendMail")
+                   transporter.sendMail(mailOptions, function (err, data) {
+                       if (err) {
+                           console.log("Error " + err);
+                       } else {
+                           console.log("=== Email sent successfully");
+                           // res.json({ status: "Email sent" });
+                       }
+                   });
+
                }}
             >
                 Example sending e-mail
             </a>
 
-            <button
-                onClick={() => {
-                    console.log('hi button 2')
-                }}
-                style={{width:'150px', height:'30px'}}
-            >
-                Send e-mail test!
-            </button>
+            {/*<button*/}
+            {/*    onClick={() => {*/}
+            {/*        console.log('hi button 2')*/}
+            {/*    }}*/}
+            {/*    style={{width:'150px', height:'30px'}}*/}
+            {/*>*/}
+            {/*    Send e-mail test!*/}
+            {/*</button>*/}
+
+
         </div>
 
 
